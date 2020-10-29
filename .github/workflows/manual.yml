@@ -21,7 +21,7 @@ jobs:
       - name: Checkout
         env:
          SHA: ${{ github.sha }}
-        uses: actions/checkout@$SHA
+        uses: actions/checkout@master
  
   # This workflow contains a single job called "greet"
   greet:
