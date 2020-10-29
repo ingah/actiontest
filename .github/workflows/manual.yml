@@ -11,13 +11,16 @@ on:
       name:
         # Friendly description to be shown in the UI instead of 'name'
         description: 'Git hash'
-        # Default value if no value is explicitly provided
-        default: "${{ github.sha }}"
-        # Input has to be provided for the workflow to run
         required: false
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@${{ github.sha }}
+ 
   # This workflow contains a single job called "greet"
   greet:
     # The type of runner that the job will run on
