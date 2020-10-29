@@ -11,7 +11,12 @@ on:
         default: 'World'
         # Input has to be provided for the workflow to run
         required: true
-
+  push:
+    branches: [master]
+    paths: [frontends/poc-frontend/**]
+  pull_request:
+    branches: [master]
+    paths: [frontends/poc-frontend/**]
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
