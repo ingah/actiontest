@@ -12,7 +12,7 @@ on:
         # Friendly description to be shown in the UI instead of 'name'
         description: 'Git hash'
         # Default value if no value is explicitly provided
-        default: ${{ github.sha }}
+        default: "${{ github.sha }}"
         # Input has to be provided for the workflow to run
         required: false
 
