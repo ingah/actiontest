@@ -6,7 +6,7 @@ on:
     inputs:
       name:
         # Friendly description to be shown in the UI instead of 'name'
-        description: 'Select from: https://eu-west-1.console.aws.amazon.com/ecr/repositories'
+        description: 'Select from: https://eu-west-1.console.aws.amazon.com/ecr/repositories/booking/'
         # Default value if no value is explicitly provided
         default: 'World'
         # Input has to be provided for the workflow to run
