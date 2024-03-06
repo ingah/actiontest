@@ -8,26 +8,13 @@
 	@grid: 10x10;
 	@size: 100vmax;
 	grid-gap: 1px;
-
-	animation: test infinite @r(50s, 150s) linear;
-	
-	@keyframes test {
-		0% {
-			transform: translate3d(@r(0, 0, 0));
-		}
-		50% {
-			transform: translate3d(@r(-500%, 1000%), @r(-500%, 1000%), 0);
-		}
-		100% {
-			transform: translate3d(0, 0, 0);
-		}
 	}
-	
+
 	background-color: forestgreen;
 	background-color: hsla(@r(360), 85%, @r(70%, 90%), @r(.9));
 	transform: scale(@rand(.1, 1.75));
 	border-radius: @rand(0, 100%);
 	transform: translate3d( @r(0%, 150%), @r(0%, 150%));
-	
+
 </css-doodle>
 </body>
